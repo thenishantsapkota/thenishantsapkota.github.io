@@ -1,6 +1,6 @@
 body{
     /*background-image: url("bgimg.gif");*/
-    animation: pulse 10s infinite;
+    animation: pulse 20s infinite;
 }
 
 @keyframes pulse{
@@ -37,6 +37,11 @@ body{
     width: 15%;
     transition: 0.4s;
 }
+
+.about:hover{
+    border-radius: 25%;
+}
+
 .index:hover{
     border-radius: 50%;
 }
@@ -44,10 +49,15 @@ body{
 .url{
     text-decoration: none;
     color:whitesmoke;
+    transition: 500ms;
+}
+
+.url:hover{
+    color:yellow;
 }
 
 body h1 {
-    font-family: 'Cascadia Code';
+    font-family: 'Arvo';
     color: gold;
     animation: myani 2s infinite;
     text-align: center;
@@ -67,7 +77,7 @@ body h1 {
 body p {
     border:powderblue;
     font-size: 18px;
-    font-family: "Cascadia Code";
+    font-family: "Arvo";
     text-align: center;
     font-weight: bold;
     color: wheat;
@@ -78,12 +88,13 @@ button {
    border: none;
    color:orchid;
    padding: 15px 32px;
+   margin: 5px;
    text-align: center;
    text-decoration: none;
    display: inline-block;
    font-size: 16px;
    border-radius: 10px;
-   font-family: "Cascadia Code";
+   font-family: "Arvo";
    justify-content: center;
    transition:500ms;
 }
@@ -100,7 +111,8 @@ ul  {
     padding: 0;
     overflow: hidden;
     background-color: black;
-    animation: navigationanimated 10s infinite;
+    animation: navigationanimated 20s infinite;
+
 }
 
 @keyframes navigationanimated{
@@ -118,10 +130,11 @@ ul  {
 
 li {
     float: left;
-    margin-left: 23%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 li a {
-    font-family: 'Cascadia Code';
+    font-family: 'Arvo';
     display: block;
     color: white;
     text-align: center;
@@ -131,7 +144,8 @@ li a {
 }
 li a:hover {
     transition: 500ms;
-    background-color: #DAC45F;
+    background-color: yellow;
+    color:black;
 }
 
 .paragraph {
@@ -143,7 +157,6 @@ li a:hover {
     margin-left: auto;
     margin-right: auto;
     border-radius: 0;
-    animation: animatedborder 3s infinite;
 }
 
 /*@keyframes animatedborder {
@@ -176,9 +189,21 @@ li a:hover {
 }
 
 .foot{
-    font-family: "Cascadia Code";
+    font-family: "Arvo";
     font-size: 10px;
     text-align: center;
     color: whitesmoke;
     padding:20px;
+}
+
+.flexbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.js-button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

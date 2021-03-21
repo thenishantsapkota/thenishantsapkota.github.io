@@ -3,29 +3,37 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Nishant Sapkota - Portfolio Website</title>
-    <script src="particles.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact Me</a></li>    
+        <div class="flexbox-container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </div>
     </ul>
-    <img class="index"src = "dp.jpg" height="600" width="600">
-    <h1>Nishant Sapkota</h1>
-    <center><button class="mailbt"  onclick="window.location.href='mailto:snishant306@gmail.com'"><i class="fa fa-envelope" aria-hidden="true"></i> snishant306@gmail.com</button></center>
+    <img class="index" id="dp" src = "dp.jpg" height="600" width="600">
+    <h1 id = "name">Nishant Sapkota</h1>
+    <div class = "js-button">
+        <button onclick="MyFunction()"> Click me!</button>
+        <button onclick="MyFunction1()"> Revert Changes!</button>
+    </div>
+    <div class="flexbox-container"><button id = "mailbt" class="mailbt"  onclick="window.location.href='mailto:snishant306@gmail.com'"><i class="fa fa-envelope" aria-hidden="true"></i> snishant306@gmail.com</button></div>
     <div class="paragraph">
     <p>Hello there! This is me. I love computers, books, nature, space. Love to spend time alone infront of my Computer.
         Currently Studying BE Computer in MBMAN.Built this site to test my HTML and CSS skills. Turns out I am not as good as I thought I was. :(
     </p></div>
-    <center>
-    <button class="button1" onclick="window.location.href='https://www.facebook.com/thenishantsapkota'"><i class="fab fa-facebook-f"></i> Facebook</button>
-    <button class="button2" onclick="window.location.href='https://github.com/thenishantsapkota'"><i class="fab fa-github"></i> Github</button>
-    <button class="button3" onclick="window.location.href='https://www.Instagram.com/thenishantsapkota'"><i class="fab fa-instagram"></i> Instagram</button>
-    <button class="button4" onclick="window.location.href='https://www.twitter.com/TheNishant'"><i class="fab fa-twitter"></i> Twitter</button>
-    <button class="button4" onclick="window.location.href='https://discord.gg/nepal'"><i class="fa fa-server" aria-hidden="true"></i> Join our Discord</button>
-    </center>
+    <div class="flexbox-container">
+        <button class="button1" onclick="window.location.href='https://www.facebook.com/thenishantsapkota'"><i class="fab fa-facebook-f"></i> Facebook</button>
+        <button class="button2" onclick="window.location.href='https://github.com/thenishantsapkota'"><i class="fab fa-github"></i> Github</button>
+        <button class="button3" onclick="window.location.href='https://www.Instagram.com/thenishantsapkota'"><i class="fab fa-instagram"></i> Instagram</button>
+        <button class="button4" onclick="window.location.href='https://www.twitter.com/TheNishant'"><i class="fab fa-twitter"></i> Twitter</button>
+    </div>
 </body>
 <footer class="foot">©2021 Nishant Sapkota</footer>
 </html>
