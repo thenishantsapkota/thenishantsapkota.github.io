@@ -1,6 +1,9 @@
 
-body {
-	/*background-image: url("bgimg.gif");*/
+body{
+	background-color: black;
+}
+/*body {
+	background-image: url("bgimg.gif");
 	animation: pulse 20s infinite;
 }
 
@@ -14,7 +17,7 @@ body {
 	100% {
 		background-color: black;
 	}
-}
+}*/
 
 .index {
 	padding-top: 20px;
@@ -111,10 +114,10 @@ ul {
 	padding: 0;
 	overflow: hidden;
 	background-color: black;
-	animation: navigationanimated 20s infinite;
+	/*animation: navigationanimated 20s infinite;*/
 }
 
-@keyframes navigationanimated {
+/*@keyframes navigationanimated {
 	0% {
 		background-color: black;
 	}
@@ -124,7 +127,7 @@ ul {
 	100% {
 		background-color: black;
 	}
-}
+}*/
 
 li {
 	float: left;
